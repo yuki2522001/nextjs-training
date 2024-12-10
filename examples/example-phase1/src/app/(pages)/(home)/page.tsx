@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 const Home = () => (
-    <div>
-        <Link href='/profiles'>Profiles Page</Link>
-        <Link href='/setting'>Settings Page</Link>
+    <div className="p-4">
+        <Link href='/profiles' className="pr-4">Profiles Page</Link>
+        <Link href='/settings'>Settings Page</Link>
     </div>
 );
 
