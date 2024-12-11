@@ -1,0 +1,24 @@
+{
+    "blogs": [
+        {
+            "id": "1",
+            "name": "Blog 1"
+        },
+        {
+            "id": "2",
+            "name": "Blog 2"
+        },
+        {
+            "id": "3",
+            "name": "Blog 3"
+        },
+        {
+            "id": "4",
+            "name": "Blog 4"
+        },
+        {
+            "id": "5",
+            "name": "Blog 5"
+        }
+    ]
+}
