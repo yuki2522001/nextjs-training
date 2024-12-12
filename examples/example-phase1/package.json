@@ -10,7 +10,7 @@
     "server": "json-server --watch --port 1234 src/json-server/db.json"
   },
   "dependencies": {
-    "next": "14.2.20",
+    "next": "15.0.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
