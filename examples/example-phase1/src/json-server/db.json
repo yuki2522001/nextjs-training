@@ -2,28 +2,23 @@
   "blogs": [
     {
       "id": 1,
-      "slug": "blog-1",
-      "name": "Blog 1"
+      "name": "How to learn NextJS from Scratch"
     },
     {
       "id": 2,
-      "slug": "blog-2",
-      "name": "Blog 2"
+      "name": "How to learn React from Scratch"
     },
     {
       "id": 3,
-      "slug": "blog-3",
-      "name": "Blog 3"
+      "name": "How to learn HTML from Scratch"
     },
     {
       "id": 4,
-      "slug": "blog-4",
-      "name": "Blog 4"
+      "name": "How to learn CSS from Scratch"
     },
     {
       "id": 5,
-      "slug": "blog-5",
-      "name": "Blog 5"
+      "name": "How to learn Java from Scratch"
     }
   ]
 }

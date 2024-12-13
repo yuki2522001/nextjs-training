@@ -13,3 +13,11 @@ export const getBlogItems = async (): Promise<BlogItemType[]> =>
       tags: ["blogs"],
     },
   });
+
+export const getBlogById = async (slug: string) => {
+  await httpRequest<BlogItemType[]>(`${BLOGS_URL}?name=${slug}`, {
+    next: {
+      tags: ["blogs"]
+    }
+  })
+}
