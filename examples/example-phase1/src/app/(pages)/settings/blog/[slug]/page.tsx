@@ -1,21 +1,21 @@
-"use client"
-import { useParams } from "next/navigation";
-
-// Services
 import { getBlogById } from "@/services/blog";
-import { useState } from "react";
-import { BlogItemType } from "@/types";
 
-const BlogDetail = async () => {
-  const [blog, setBlog] = useState<BlogItemType | null>(null)
-  const router = useParams();
+interface BlogDetailPageProps {
+  params: {
+    slug: string;
+  };
+}
 
-  const { slug } = router;
+const BlogDetail = async ({ params }: BlogDetailPageProps) => {
+  const blog = await getBlogById(params.slug);
+  console.log("blog", blog);
 
-  const user = await getBlogById(slug as string);
+  // const router = useParams();
+
+  // const { slug } = router;
 
   return (
-    <p>This is the detail page with slug: {slug}</p>
+    <p>This is the detail page with slug: {params.slug}</p>
   )
 }
 
