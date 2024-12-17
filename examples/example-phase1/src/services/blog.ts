@@ -7,7 +7,7 @@ import { BlogItemType } from "@/types";
 // Utils
 import { httpRequest } from "@/utils";
 
-export const getBlogItems = async (): Promise<BlogItemType[]> =>
+export const getBlogs = async (): Promise<BlogItemType[]> =>
   await httpRequest<BlogItemType[]>(BLOGS_URL, {
     // Helps cache and revalidate data
     // Eg: revalidateTag(ENDPOINTS.BLOGS)

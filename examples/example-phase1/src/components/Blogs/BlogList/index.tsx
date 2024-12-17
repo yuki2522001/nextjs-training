@@ -1,5 +1,5 @@
 // Services
-import { getBlogItems } from "@/services/blog";
+import { getBlogs } from "@/services/blog";
 
 // Types
 import { BlogItemType } from "@/types";
@@ -8,7 +8,7 @@ import { BlogItemType } from "@/types";
 import BlogItem from "./BlogItem";
 
 const BlogList = async () => {
-  const blogs: BlogItemType[] = await getBlogItems();
+  const blogs: BlogItemType[] = await getBlogs();
 
   return (
     <div className="flex flex-col items-center">
