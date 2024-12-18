@@ -1,20 +1,22 @@
 // Services
-import { getBlogBySlug } from "@/services/blog";
+import { getBlogById } from "@/services/blog";
 
 interface BlogDetailPageProps {
   params: {
-    slug: string
+    id: number
   }
 }
 
 const BlogDetail = async ({ params }: BlogDetailPageProps) => {
-  const slug = params?.slug;
+  const blogId = params?.id;
 
-  const blog = await getBlogBySlug(slug as string);
+  const blog = await getBlogById(blogId);
+  console.log("blog", blog);
+  
 
   return (
     <>
-      <p>This is the detail page with slug: {slug} </p>
+      <p>This is the detail page with slug: {blogId} </p>
       <div>Name: {blog?.name}</div>
     </>
 

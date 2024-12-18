@@ -16,7 +16,7 @@ const BlogList = async () => {
       <ul className="flex flex-row justify-between w-80">
         {blogs.map((blog) => (
           <li key={blog.id}>
-            <BlogItem id={blog.id} name={blog.name} slug={blog.slug} />
+            <BlogItem id={blog.id} name={blog.name} />
           </li>
         ))}
       </ul>
