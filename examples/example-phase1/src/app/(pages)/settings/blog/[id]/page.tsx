@@ -1,18 +1,19 @@
 // Services
 import { getBlogById } from "@/services/blog";
 
+// Utils
+import { extractIdFromSlug } from "@/utils/slug";
+
 interface BlogDetailPageProps {
   params: {
-    id: number
+    id: string
   }
 }
 
 const BlogDetail = async ({ params }: BlogDetailPageProps) => {
-  const blogId = params?.id;
+  const blogId = extractIdFromSlug(params?.id);
 
-  const blog = await getBlogById(blogId);
-  console.log("blog", blog);
-  
+  const blog = await getBlogById(blogId as string);
 
   return (
     <>
