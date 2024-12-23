@@ -17,18 +17,12 @@ export const getBlogs = async (): Promise<BlogItemType[]> =>
   });
 
 /**
- * 
+ *
  * @param id to get blog by id
- * @returns 
+ * @returns
  */
 export const getBlogById = async (id: string): Promise<BlogItemType | null> => {
-  const data = await httpRequest<BlogItemType[]>(`${BLOGS_URL}?id=${id}`);
+  const data = await httpRequest<BlogItemType>(`${BLOGS_URL}/${id}`);
 
-  // Check if the array is not empty and has a first element.
-  if (data.length > 0) {
-    return data[0];
-  }
-
-  // Return null if the blog cannot be found
-  return null;
+  return data;
 };

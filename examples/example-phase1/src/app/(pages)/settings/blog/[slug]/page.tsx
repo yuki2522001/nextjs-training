@@ -1,3 +1,6 @@
+// Libs
+import { notFound } from "next/navigation";
+
 // Services
 import { getBlogById } from "@/services/blog";
 
@@ -6,12 +9,18 @@ import { extractIdFromSlug } from "@/utils/slug";
 
 interface BlogDetailPageProps {
   params: {
-    id: string
-  }
+    slug: string;
+  };
 }
 
 const BlogDetail = async ({ params }: BlogDetailPageProps) => {
-  const blogId = extractIdFromSlug(params?.id) || "1";
+  const { slug } = params;
+
+  const blogId = extractIdFromSlug(slug);
+
+  if (!blogId) {
+    notFound();
+  }
 
   const blog = await getBlogById(blogId);
 
@@ -20,8 +29,7 @@ const BlogDetail = async ({ params }: BlogDetailPageProps) => {
       <p>This is the detail page with slug: {blogId} </p>
       <div>Name: {blog?.name}</div>
     </>
-
-  )
-}
+  );
+};
 
 export default BlogDetail;
