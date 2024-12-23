@@ -1,3 +1,4 @@
+import './globals.css';
 import React from 'react';
 
 const RootLayout = ({ children }: React.PropsWithChildren) => (
