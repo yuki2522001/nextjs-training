@@ -11,9 +11,9 @@ interface BlogDetailPageProps {
 }
 
 const BlogDetail = async ({ params }: BlogDetailPageProps) => {
-  const blogId = extractIdFromSlug(params?.id);
+  const blogId = extractIdFromSlug(params?.id) || "1";
 
-  const blog = await getBlogById(blogId as string);
+  const blog = await getBlogById(blogId);
 
   return (
     <>
