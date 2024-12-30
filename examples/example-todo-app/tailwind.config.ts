@@ -22,7 +22,6 @@ const config: Config = {
       borderRadius: customRadius,
     },
   },
-  darkMode: "class",
   plugins: [nextui()],
 };
 export default config;

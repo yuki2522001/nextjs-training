@@ -5,21 +5,21 @@ import { extendVariants, Button as ButtonNextUI } from '@nextui-org/react';
 export const Button = extendVariants(ButtonNextUI, {
   variants: {
     color: {
-      danger: 'bg-danger text-white',
-      warning: 'bg-warning text-white',
-      success: 'bg-success text-red',
-      info: 'bg-info text-dark',
+      danger: 'bg-danger',
+      warning: 'bg-warning',
+      success: 'bg-success',
+      info: 'bg-info',
     },
     radius: {
-      xs: 'rounded',
+      default: 'rounded-default',
     },
     size: {
-      default: 'text-xxs text-accent-secondary px-2.5 py-2',
+      default: 'text-small px-2.5 py-2 text-accent-secondary',
     },
   },
   defaultVariants: {
     color: 'info',
-    radius: 'xs',
+    radius: 'default',
     size: 'default',
   },  
 });

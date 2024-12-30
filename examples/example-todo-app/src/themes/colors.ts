@@ -17,5 +17,4 @@ export const customColors = {
   warning: '#e4a11b',
   success: '#14a44d',
   info: '#3b71ca',
-
 };
