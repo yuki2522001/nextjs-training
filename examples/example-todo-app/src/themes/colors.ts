@@ -11,4 +11,11 @@ export const systemColors = {
 
 export const customColors = {
   ...systemColors,
+
+  // Background
+  danger: '#dc4c64',
+  warning: '#e4a11b',
+  success: '#14a44d',
+  info: '#3b71ca',
+
 };
