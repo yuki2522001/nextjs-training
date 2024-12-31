@@ -7,7 +7,7 @@ const Input = extendVariants(NextUIInput, {
     color: {
       default: {
         input: 'border-default',
-        errorMessage: 'text-sm'
+        danger: 'text-danger'
       }
     },
     size: {
