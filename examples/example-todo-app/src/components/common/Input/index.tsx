@@ -6,23 +6,23 @@ const Input = extendVariants(NextUIInput, {
   variants: {
     color: {
       default: {
-        inputWrapper: 'border-default',
+        input: 'border-default',
         errorMessage: 'text-sm'
       }
     },
     size: {
       sm: {
-        inputWrapper: 'px-2.5 py-2 text-small'
+        input: 'px-2.5 py-2 text-small'
       },
     },
     radius: {
       default: {
-        inputWrapper: 'rounded-default'
+        input: 'rounded-default'
       }
     },
     border: {
       default: {
-        inputWrapper: 'border'
+        input: 'border'
       }
     }
   },
