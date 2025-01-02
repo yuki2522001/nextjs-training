@@ -36,11 +36,11 @@ const HomePage = () => {
                       const { id, task, status } = item
                       return (
                         <TableRow key={id}>
-                          <TableCell>
+                          <TableCell className="w-12">
                             {id}
                           </TableCell>
-                          <TableCell>{task}</TableCell>
-                          <TableCell>
+                          <TableCell className="w-72">{task}</TableCell>
+                          <TableCell className="w-24">
                             {status}
                           </TableCell>
                           <TableCell>
