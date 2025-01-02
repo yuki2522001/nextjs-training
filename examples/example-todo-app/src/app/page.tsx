@@ -39,11 +39,11 @@ const Home = () => {
         </TableHeader>
         <TableBody>
           {rows.map((item) => {
-            const { id, no, task, status } = item
+            const { id, task, status } = item
             return (
               <TableRow key={id}>
                 <TableCell>
-                  {no}
+                  {id}
                 </TableCell>
                 <TableCell>{task}</TableCell>
                 <TableCell>
