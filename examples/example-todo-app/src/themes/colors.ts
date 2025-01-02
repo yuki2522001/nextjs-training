@@ -13,6 +13,7 @@ export const customColors = {
   ...systemColors,
 
   // Background
+  primary: '#eee',
   danger: '#dc4c64',
   warning: '#e4a11b',
   success: '#14a44d',
