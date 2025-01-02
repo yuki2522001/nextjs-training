@@ -29,7 +29,7 @@ const Home = () => {
         className="text-small"
       />
 
-      <Table aria-label="Order Report Table" >
+      <Table aria-label="Information Task Table" >
         <TableHeader columns={columns} className="pl-0">
           {(column) => (
             <TableColumn key={column.uid}>
@@ -45,7 +45,7 @@ const Home = () => {
                 <TableCell>
                   {no}
                 </TableCell>
-                <TableCell className="max-w-[240px]">{task}</TableCell>
+                <TableCell>{task}</TableCell>
                 <TableCell>
                   {status}
                 </TableCell>
