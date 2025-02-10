@@ -2,7 +2,7 @@
 
 import { extendVariants, Button as ButtonNextUI } from '@nextui-org/react';
 
-export const Button = extendVariants(ButtonNextUI, {
+const Button = extendVariants(ButtonNextUI, {
   variants: {
     color: {
       danger: 'bg-danger',
